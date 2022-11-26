@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function displayAscii(e) {
+            if (e.keyCode == 16) {
+                alert(e.keyCode + " shift key is pressed");
+            }
+            else if (event.keyCode == 17) {
+                alert(event.keyCode + " control key is pressed");
+
+            }
+
+            else if (event.keyCode == 18) {
+                alert(event.keyCode + " alt key is pressed");
+
+            }
+            else {
+                alert(event.keyCode);
+            }
+        }
+    </script>
+    <form>
+        <input onkeyup="displayAscii(event)" />
+    </form>
+</body>
+</html>
